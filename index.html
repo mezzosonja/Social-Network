@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>User Profile</title>
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <meta name="viewport" content="width=device-width" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap4/css/bootstrap.min.css">
+    <!-- Fonts CSS -->
+    <!-- My CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- Bootstrap core CSS     -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Animation library for notifications   -->
+    <link href="css/animate.min.css" rel="stylesheet" />
+    <!--     Fonts and icons     -->
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700|Kaushan+Script|Lato:400,700|Montserrat:400,700|Open+Sans:400,700|Roboto+Slab:100,300,400,700" rel="stylesheet">
+</head>
+
+<body id="page2">
+    <!-- Profile -->
+    <div class="mainbody container-fluid">
+        <div class="row">
+            <!-- Nav -->
+            <section id="navbar">
+                <nav class="navbar navbar-default">
+                    <div class="container-fluid">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="navbar-header navbar-toggleable-md navbar-light bg-faded list-inlin">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="true">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <a class="navbar-brand" href="home.html">Logo</a>
+                            <form class="navbar-form navbar-left">
+                                <div class="form-group">
+                                    <input type="text" class="form-control col-lg-4 col-md-3 col-sm-2" placeholder="Search...">
+                                </div>
+                            </form>
+                        </div>
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav navbar-center">
+                                <li class="nav-item">
+                                    <a class="nav-link nav-font" href="home.html"><i class="fa fa-home center-fa fa-2x"></i>Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link nav-font" href="#dashboard"><i class="fa fa-user-plus center-fa fa-2x" aria-hidden="true"></i>Connection</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link nav-font" href="#jobs"><i class="fa fa-briefcase center-fa fa-2x" aria-hidden="true"></i>Jobs</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link nav-font" href="#messages"><i class="fa fa-commenting center-fa fa-2x"></i>Messages</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link nav-font" href="#notifications" data-toggle="modal" data-target="#login"><i class="fa fa-bell center-fa fa-2x"></i>Notifications</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link nav-font" href="#help" data-toggle="modal" data-target="#login"><i class="fa fa-question-circle center-fa fa-2x"></i>Help</a>
+                                </li>
+                            </ul>
+                            <ul class="nav navbar-nav navbar-right">
+                                <li class="dropdown drop">
+                                    <a href="#" class="dropdown-toggle drop-link" data-toggle="dropdown"><img src="img/person.png" class="img-responsive img-circle drop-img" title="" alt="" width="20px" height="20px"></a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <div class="navbar-content cont-box">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <img src="img/person.png" alt="Alternate Text" class="img-responsive img-circle cont-img" />
+                                                        <p class="text-center small cont-text">
+                                                            <a class="change" href="#">Change Photo</a></p>
+                                                    </div>
+                                                    <div class="col-md-6 cont-text">
+                                                        <span>John Smith</span>
+                                                        <p class="text-muted small">
+                                                            example@pods.tld</p>
+                                                        <div class="divider">
+                                                        </div>
+                                                        <a href="#" class="btn btn-default btn-xs cont-btn"><i class="fa fa-user-o fa-text" aria-hidden="true"></i> Profile</a>
+                                                        <a href="#" class="btn btn-default btn-xs cont-btn"><i class="fa fa-address-card-o fa-text" aria-hidden="true"></i> Contacts</a>
+                                                        <a href="#" class="btn btn-default btn-xs cont-btn"><i class="fa fa-cogs fa-text" aria-hidden="true"></i> Settings</a>
+                                                        <a href="#" class="btn btn-default btn-xs cont-btn"><i class="fa fa-question-circle-o fa-text" aria-hidden="true"></i> Help!</a>
+
+                                                    </div>
+                                                    <br>
+                                                </div>
+                                            </div>
+                                            <div class="navbar-footer">
+                                                <div class="navbar-footer-content">
+                                                    <div class="row">
+                                                        <div class="col-md-6 cont-text cont-foot">
+                                                            <a href="#" class="btn btn-default btn-sm cont-btn"><i class="fa fa-unlock-alt" aria-hidden="true"></i> Change Passowrd</a>
+                                                        </div>
+                                                        <div class="col-md-6 cont-text cont-foot">
+                                                            <a href="#" class="btn btn-default btn-sm cont-btn pull-right"><i class="fa fa-power-off" aria-hidden="true"></i> Sign Out</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- /.navbar-collapse -->
+                    </div>
+                    <!-- /.container-fluid -->
+                </nav>
+            </section>
+            <div class="all col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <!-- User Panel -->
+                <div class="col-lg-3 col-md-3 hidden-sm hidden-xs">
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <div class="media">
+                                <div class="panel-identity panel-identity-module__default-bg panel-identity-module__member-bg-image">
+                                    <img src="img/net-background.jpg" alt="" width="100%" class="panel-background-image">
+                                </div>
+                                <a href="#" id="panel-back-2" class="panel-back-view"><img class="panel-image panel-image-identity-module__member-photo EntityPhoto-circle-5 loaded" alt="#" src="img/person.png">
+                                </a>
+                                <br>
+                                <br>
+                                <br>
+                                <a data-control-name="identity_welcome_message" href="#" id="panel-back-3" class="panel-identity-name panel-identity-module__actor-link panel-back-view">John Smith</a>
+                                <br>
+                                <p class="identity-headline Sans-13px-black-55% mt1"> Web Developer</p>
+                                <hr class="hr-line">
+                            </div>
+                            <div class="panel-identity-module__widgets">
+                                <div id="panel-back-4" class="entity-list-wrapper panel-back-view">
+                                    <ul class="entity-list row">
+                                        <li class=" entity-list-item">
+                                            <div id="panel-back5" class="entity-item panel-back-view">
+                                                <div class="content-container">
+                                                    <div class="stat-container">
+                                                        <button data-control-name="identity_wvmp" class="widget-route" data-panel-back-action="">
+                                                            <span class="Sans-21px-black-85% identity-stat"> 8</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="identity-container">
+                                                        <button data-control-name="identity_wvmp" class="widget-route" data-panel-back-action="">
+                                                            <div id="panel-back6" class="description headline attributed-text panel-back-view"> Who's viewed your profile
+                                                            </div>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <hr style="color:#9D9494; margin-left:10%;">
+                                        </li>
+                                        <li class=" entity-list-item">
+                                            <div id="panel-back7" class="entity-item panel-back-view">
+                                                <div class="content-container">
+                                                    <div class="stat-container">
+                                                        <button data-control-name="identity_wvmu" class="widget-route" data-panel-back-action="">
+                                                            <span class="Sans-21px-black-85% identity-stat">20</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="identity-container">
+                                                        <button data-control-name="identity_wvmu" class="widget-route" data-panel-back-action="">
+                                                            <div id="panel-back8" class="description headline attributed-text panel-back-view"> Views of your post
+                                                            </div>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Posts -->
+                <div class="col-lg-6 col-md-6 col-sm-9 col-xs-12">
+                    <!-- Post -->
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <span>
+                                <div class="panel-title pull-left">
+                                    <a href=""><img class="panel-image-identity-module__member-photo EntityPhoto-circle-5 loaded" alt="#" height="40" width="40" src="img/person.png">&nbsp;&nbsp;&nbsp;Share with others ...</a>
+                                </div>
+                                <div class="dropdown pull-right">
+                                    <button class="button-deco"><i class="fa fa-camera-retro"></i></button>
+                                </div>
+                            </span>
+                            <br>
+                            <br>
+                            <hr style="color:#7B6F6F;">
+                            <span class="pull-left">
+                                <a href="#" class="btn btn-link" style="text-decoration:none;"> Photo/Video</a>
+                            </span>
+                            <span class="pull-right">
+                                <a href="#" class="btn btn-link" style="text-decoration:none;">Post</a>
+                            </span>
+                        </div>
+                    </div>
+                    <!-- Post content -->
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <div class="pull-left">
+                                <a href="#">
+                                    <img class="media-object img-circle" src="img/person.png" width="40px" height="40px" style="margin-right:8px; margin-top:5px;">
+                                </a>
+                            </div>
+                            <h5><a href="#">John Smith</a><br><small><small><a href="#" style="text-decoration:none; color:grey;"><i><i class="fa fa-clock-o" aria-hidden="true"></i> 5 min</i></a></small></small></h5>
+                            <span>
+                                <div class="navbar-right">
+                                    <div class="dropdown">
+                                        <button class="btn btn-link btn-xs dropdown-toggle" type="button" id="dd1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><i class="fa fa-cog" aria-hidden="true"></i><span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dd1" style="float: right;">
+                                <li><a href="#"><i class="fa fa-fw fa-exclamation-triangle" aria-hidden="true"></i> Report</a></li>
+                                <li><a href="#"><i class="fa fa-fw fa-ban" aria-hidden="true"></i> Ignore</a></li>
+                                <li><a href="#"><i class="fa fa-fw fa-bell" aria-hidden="true"></i> Enable notifications for this post</a></li>
+                                <li><a href="#"><i class="fa fa-fw fa-eye-slash" aria-hidden="true"></i> Hide</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#"><i class="fa fa-fw fa-trash" aria-hidden="true"></i> Delete</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    </span>
+                    <hr style="color:#7B6F6F;">
+                    <div class="post-content">
+                        <p>Simple post content</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel gravida metus, non ultrices sapien. Morbi odio metus, dapibus non nibh id amet.</p>
+                    </div>
+                    <hr style="color:#7B6F6F;">
+                    <div>
+                        <div class="pull-right btn-group-xs">
+                            <a class="btn btn-default btn-xs heart"><i class="fa fa-heart" aria-hidden="true"></i> Like</a>
+                            <a class="btn btn-default btn-xs share"><i class="fa fa-share" aria-hidden="true"></i> Share</a>
+                            <a class="btn btn-default btn-xs commenting"><i class="fa fa-commenting" aria-hidden="true"></i> Comment</a>
+                        </div>
+                        <div class="pull-left">
+                            <p class="text-muted" style="margin-left:5px;"><i class="fa fa-globe" aria-hidden="true"></i> Public</p>
+                        </div>
+                        <br>
+                    </div>
+                    <hr style="color:#7B6F6F;">
+                    <div class="media">
+                        <div class="pull-left">
+                            <a href="#">
+                                <img class="media-object img-circle" src="img/person.png" width="30px" height="30px" style="margin-left:3px; margin-right:-5px;">
+                            </a>
+                        </div>
+                        <div class="media-body">
+                            <textarea class="form-control" rows="1" placeholder="Comment..."></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Share -->
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <div class="pull-left">
+                        <a href="#">
+                            <img class="media-object img-circle" src="img/person.png" width="40px" height="40px" style="margin-right:8px; margin-top:5px;">
+                        </a>
+                    </div>
+                    <h5><a href="#">John Smith</a><br><small><small><a href="#" style="text-decoration:none; color:grey;"><i><i class="fa fa-clock-o" aria-hidden="true"></i> 20 min</i></a></small></small></h5>
+                    <span>
+                        <div class="navbar-right">
+                            <div class="dropdown">
+                                <button class="btn btn-link btn-xs dropdown-toggle" type="button" id="dd1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><i class="fa fa-cog" aria-hidden="true"></i><span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dd1" style="float: right;">
+                        <li><a href="#"><i class="fa fa-fw fa-exclamation-triangle" aria-hidden="true"></i> Report</a></li>
+                        <li><a href="#"><i class="fa fa-fw fa-ban" aria-hidden="true"></i> Ignore</a></li>
+                        <li><a href="#"><i class="fa fa-fw fa-bell" aria-hidden="true"></i> Enable notifications for this post</a></li>
+                        <li><a href="#"><i class="fa fa-fw fa-eye-slash" aria-hidden="true"></i> Hide</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#"><i class="fa fa-fw fa-trash" aria-hidden="true"></i> Delete</a></li>
+                    </ul>
+                </div>
+            </div>
+            </span>
+            <hr style="color:#7B6F6F;">
+            <div class="post-content">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <div class="pull-left">
+                            <a href="#">
+                                <img class="media-object img-circle" src="img/person-3.png" width="40px" height="40px" style="margin-right:8px; margin-top:-5px;">
+                            </a>
+                        </div>
+                        <h5><a href="#" style="text-decoration:none;">Oliver Williams</a><br><small><small><a href="#" style="text-decoration:none; color:grey;"><i><i class="fa fa-clock-o" aria-hidden="true"></i> 1 hour</i></a></small></small></h5>
+                        <hr>
+                        <div class="post-content">
+                            Reshare post example.
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel gravida metus, non ultrices sapien. Morbi odio metus, dapibus non nibh id amet.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr style="color:#7B6F6F;">
+            <div>
+                <div class="pull-right btn-group-xs">
+                    <a class="btn btn-default btn-xs heart"><i class="fa fa-heart" aria-hidden="true"></i> Like</a>
+                    <a class="btn btn-default btn-xs share"><i class="fa fa-share" aria-hidden="true"></i> Share</a>
+                    <a class="btn btn-default btn-xs commenting"><i class="fa fa-commenting" aria-hidden="true"></i> Comment</a>
+                </div>
+                <div class="pull-left">
+                    <p class="text-muted" style="margin-left:5px;"><i class="fa fa-globe" aria-hidden="true"></i> Public</p>
+                </div>
+                <br>
+            </div>
+            <hr style="color:#7B6F6F;">
+            <div class="media">
+                <div class="pull-left">
+                    <a href="#">
+                        <img class="media-object img-circle" src="img/person.png" width="30px" height="30px" style="margin-left:3px; margin-right:-5px;">
+                    </a>
+                </div>
+                <div class="media-body">
+                    <textarea class="form-control" rows="1" placeholder="Comment..."></textarea>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Post content with picture -->
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <div class="pull-left">
+                <a href="#">
+                    <img class="media-object img-circle" src="img/person.png" width="40px" height="40px" style="margin-right:8px; margin-top:5px;">
+                </a>
+            </div>
+            <h5><a href="#">John Smith</a><br><small><small><a href="#" style="text-decoration:none; color:grey;"><i><i class="fa fa-clock-o" aria-hidden="true"></i> 30 min</i></a></small></small></h5>
+            <span>
+                    <div class="navbar-right">
+                        <div class="dropdown">
+                            <button class="btn btn-link btn-xs dropdown-toggle" type="button" id="dd1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><i class="fa fa-cog" aria-hidden="true"></i><span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dd1" style="float: right;">
+                <li><a href="#"><i class="fa fa-fw fa-exclamation-triangle" aria-hidden="true"></i> Report</a></li>
+                <li><a href="#"><i class="fa fa-fw fa-ban" aria-hidden="true"></i> Ignore</a></li>
+                <li><a href="#"><i class="fa fa-fw fa-bell" aria-hidden="true"></i> Enable notifications for this post</a></li>
+                <li><a href="#"><i class="fa fa-fw fa-eye-slash" aria-hidden="true"></i> Hide</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#"><i class="fa fa-fw fa-trash" aria-hidden="true"></i> Delete</a></li>
+            </ul>
+        </div>
+    </div>
+    </span>
+    <hr style="color:#7B6F6F;">
+    <div class="post-content">
+        <p>Sample post content with picture.</p>
+        <br>
+        <img class="img-responsive" src="https://media.giphy.com/media/PgaDnsiuryMk8/giphy.gif">
+    </div>
+    <hr style="color:#7B6F6F;">
+    <div>
+        <div class="pull-right btn-group-xs">
+            <a class="btn btn-default btn-xs heart"><i class="fa fa-heart" aria-hidden="true"></i> Like</a>
+            <a class="btn btn-default btn-xs share"><i class="fa fa-share" aria-hidden="true"></i> Share</a>
+            <a class="btn btn-default btn-xs commenting"><i class="fa fa-commenting" aria-hidden="true"></i> Comment</a>
+        </div>
+        <div class="pull-left">
+            <p class="text-muted" style="margin-left:5px;"><i class="fa fa-globe" aria-hidden="true"></i> Public</p>
+        </div>
+        <br>
+    </div>
+    <hr style="color:#7B6F6F;">
+    <div class="media">
+        <div class="pull-left">
+            <a href="#">
+                <img class="media-object img-circle" src="img/person.png" width="30px" height="30px" style="margin-left:3px; margin-right:-5px;">
+            </a>
+        </div>
+        <div class="media-body">
+            <textarea class="form-control" rows="1" placeholder="Comment..."></textarea>
+        </div>
+    </div>
+    </div>
+    </div>
+    <!-- Post content with comments -->
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <div class="pull-left">
+                <a href="#">
+                    <img class="media-object img-circle" src="img/person.png" width="40px" height="40px" style="margin-right:8px; margin-top:5px;">
+                </a>
+            </div>
+            <h5><a href="#">John Smith</a><br><small><small><a href="#" style="text-decoration:none; color:grey;"><i><i class="fa fa-clock-o" aria-hidden="true"></i> 5 min</i></a></small></small></h5>
+            <span>
+                                    <div class="navbar-right">
+                                        <div class="dropdown">
+                                            <button class="btn btn-link btn-xs dropdown-toggle" type="button" id="dd1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><i class="fa fa-cog" aria-hidden="true"></i><span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dd1" style="float: right;">
+                <li><a href="#"><i class="fa fa-fw fa-exclamation-triangle" aria-hidden="true"></i> Report</a></li>
+                <li><a href="#"><i class="fa fa-fw fa-ban" aria-hidden="true"></i> Ignore</a></li>
+                <li><a href="#"><i class="fa fa-fw fa-bell" aria-hidden="true"></i> Enable notifications for this post</a></li>
+                <li><a href="#"><i class="fa fa-fw fa-eye-slash" aria-hidden="true"></i> Hide</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#"><i class="fa fa-fw fa-trash" aria-hidden="true"></i> Delete</a></li>
+            </ul>
+        </div>
+    </div>
+    </span>
+    <hr style="color:#7B6F6F;">
+    <div class="post-content">
+        <p>Sample post content with comments.</p>
+        <br>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel gravida metus, non ultrices sapien. Morbi odio metus, dapibus non nibh id amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel gravida metus, non ultrices sapien. Morbi odio metus, dapibus non nibh id amet.</p>
+    </div>
+    <hr style="color:#7B6F6F;">
+    <div>
+        <div class="pull-right btn-group-xs">
+            <a class="btn btn-default btn-xs heart"><i class="fa fa-heart" aria-hidden="true"></i> Like</a>
+            <a class="btn btn-default btn-xs share"><i class="fa fa-share" aria-hidden="true"></i> Share</a>
+            <a class="btn btn-default btn-xs commenting"><i class="fa fa-commenting" aria-hidden="true"></i> Comment</a>
+        </div>
+        <div class="pull-left">
+            <p class="text-muted" style="margin-left:5px;"><i class="fa fa-globe" aria-hidden="true"></i> Public</p>
+        </div>
+        <br>
+    </div>
+    <hr style="color:#7B6F6F;">
+    <div class="showcomments">
+        <a class="btn btn-default btn-xs"><i class="fa fa-bars" aria-hidden></i> Show more comments</a>
+        <hr>
+        <div class="post-content">
+            <div class="panel-default">
+                <div class="panel-body">
+                    <div class="pull-left">
+                        <a href="#">
+                            <img class="media-object img-circle" src="img/person-3.png" width="35px" height="35px" style="margin-left:-45px; margin-top:-20px;">
+                        </a>
+                    </div>
+                    <div class="post-content-h6">
+                        <h6><a href="#">Oliver Williams</a>
+                                                Comment example.
+                                                <br> Donec laoreet, nisl quis tempor hendrerit, libero augue blandit turpis, in dignissim odio mauris eu tortor. Ut hendrerit ipsum elit, a elementum nulla ultrices eu. In posuere mollis efficitur. Maecenas justo turpis, tristique sit amet ultricies quis, molestie eget ex. Nam vestibulum consequat tincidunt.</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="post-content">
+            <div class="panel-default">
+                <div class="panel-body">
+                    <div class="pull-left">
+                        <a href="#">
+                            <img class="media-object img-circle" src="img/person-2.png" width="35px" height="35px" style="margin-left:-45px; margin-top:-20px;">
+                        </a>
+                    </div>
+                    <div class="post-content-h6">
+                        <h6><a href="#">Mary Jones</a>
+                                                Comment example.
+                                                <br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus cumque incidunt, repellendus saepe minus est. Deleniti doloribus, fuga necessitatibus officia ex vel a, ipsam debitis expedita similique molestiae, odit ipsum!</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="post-content">
+            <div class="panel-default">
+                <div class="panel-body">
+                    <div class="pull-left">
+                        <a href="#">
+                            <img class="media-object img-circle" src="img/person.png" width="35px" height="35px" style="margin-left:-45px; margin-top:-20px;">
+                        </a>
+                    </div>
+                    <div class="post-content-h6">
+                        <h6><a href="#">John Smith</a>
+                                                Comment example.
+                                                <br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus cumque incidunt, repellendus saepe minus est. Deleniti doloribus, fuga necessitatibus officia ex vel a, ipsam debitis expedita similique molestiae, odit ipsum!</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr style="color:#7B6F6F;">
+    <div class="media">
+        <div class="pull-left">
+            <a href="#">
+                <img class="media-object img-circle" src="img/person.png" width="30px" height="30px" style="margin-left:3px; margin-right:-5px;">
+            </a>
+        </div>
+        <div class="media-body">
+            <textarea class="form-control" rows="1" placeholder="Comment..."></textarea>
+        </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/jquery-1.10.2.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="js/bodiel.js"></script>
+    <script src="bootstrap4/js/bootstrap.min.js"></script>
+    <!-- jQuery -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js" integrity="sha384-mE6eXfrb8jxl0rzJDBRanYqgBxtJ6Unn4/1F7q4xRRyIw7Vdg9jP4ycT7x1iVsgb" crossorigin="anonymous"></script>
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <!-- Theme JavaScript -->
+    <script src="js/home.min.js"></script>
+</body>
+
+</html>
